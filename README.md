@@ -1,4 +1,4 @@
-# 📡 YK71M Radar Auto-Tracking System: Digitalizing Legacy Technology on Zynq-7000 SoC
+# 📡  Radar Auto-Tracking System: Digitalizing Legacy Technology on Zynq-7000 SoC
 
 
 
