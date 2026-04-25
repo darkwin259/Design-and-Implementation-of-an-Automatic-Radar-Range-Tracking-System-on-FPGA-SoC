@@ -1,0 +1,1170 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Sun Apr 26 01:00:08 2026
+# Process ID         : 23412
+# Current directory  : F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1
+# Command line       : vivado.exe -log DB_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DB_wrapper.tcl -notrace
+# Log file           : F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1/DB_wrapper.vdi
+# Journal file       : F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1\vivado.jou
+# Running On         : HOANGTUAN
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16782 MB
+# Swap memory        : 13836 MB
+# Total Virtual      : 30618 MB
+# Available Virtual  : 5820 MB
+#-----------------------------------------------------------
+source DB_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 644.078 ; gain = 204.445
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FPGA_Project/FPGA_YK71/ip_repo/YK71_Tracker_AXI_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FPGA_Project/FPGA_YK71/ip_repo/Syns_TL_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FPGA_Project/FPGA_YK71/ip_repo/PULSE_IP_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2024.2/data/ip'.
+Command: link_design -top DB_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_Target_Stationary_0_0/DB_Target_Stationary_0_0.dcp' for cell 'DB_i/Target_Stationary_0'
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_YK71_Tracker_AXI_0_0/DB_YK71_Tracker_AXI_0_0.dcp' for cell 'DB_i/YK71_Tracker_AXI_0'
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_axi_smc_0/DB_axi_smc_0.dcp' for cell 'DB_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_clk_wiz_0_0/DB_clk_wiz_0_0.dcp' for cell 'DB_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_dongbo_0_0/DB_dongbo_0_0.dcp' for cell 'DB_i/dongbo_0'
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_processing_system7_0_0/DB_processing_system7_0_0.dcp' for cell 'DB_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_rst_ps7_0_250M_0/DB_rst_ps7_0_250M_0.dcp' for cell 'DB_i/rst_ps7_0_250M'
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_target_moving_0_0/DB_target_moving_0_0.dcp' for cell 'DB_i/target_moving_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 933.059 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. DB_i/clk_wiz_0/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'DB_i/clk_wiz_0/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_processing_system7_0_0/DB_processing_system7_0_0.xdc] for cell 'DB_i/processing_system7_0/inst'
+Finished Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_processing_system7_0_0/DB_processing_system7_0_0.xdc] for cell 'DB_i/processing_system7_0/inst'
+Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_clk_wiz_0_0/DB_clk_wiz_0_0_board.xdc] for cell 'DB_i/clk_wiz_0/inst'
+Finished Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_clk_wiz_0_0/DB_clk_wiz_0_0_board.xdc] for cell 'DB_i/clk_wiz_0/inst'
+Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_clk_wiz_0_0/DB_clk_wiz_0_0.xdc] for cell 'DB_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_clk_wiz_0_0/DB_clk_wiz_0_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_clk_wiz_0_0/DB_clk_wiz_0_0.xdc:54]
+get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1657.742 ; gain = 568.473
+Finished Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_clk_wiz_0_0/DB_clk_wiz_0_0.xdc] for cell 'DB_i/clk_wiz_0/inst'
+Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_axi_smc_0/bd_0/ip/ip_1/bd_dc1b_psr_aclk_0_board.xdc] for cell 'DB_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_axi_smc_0/bd_0/ip/ip_1/bd_dc1b_psr_aclk_0_board.xdc] for cell 'DB_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_axi_smc_0/bd_0/ip/ip_1/bd_dc1b_psr_aclk_0.xdc] for cell 'DB_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_axi_smc_0/bd_0/ip/ip_1/bd_dc1b_psr_aclk_0.xdc] for cell 'DB_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_axi_smc_0/smartconnect.xdc] for cell 'DB_i/axi_smc/inst'
+Finished Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_axi_smc_0/smartconnect.xdc] for cell 'DB_i/axi_smc/inst'
+Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_rst_ps7_0_250M_0/DB_rst_ps7_0_250M_0_board.xdc] for cell 'DB_i/rst_ps7_0_250M/U0'
+Finished Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_rst_ps7_0_250M_0/DB_rst_ps7_0_250M_0_board.xdc] for cell 'DB_i/rst_ps7_0_250M/U0'
+Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_rst_ps7_0_250M_0/DB_rst_ps7_0_250M_0.xdc] for cell 'DB_i/rst_ps7_0_250M/U0'
+Finished Parsing XDC File [f:/FPGA_Project/FPGA_YK71/YK71/YK71.gen/sources_1/bd/DB/ip/DB_rst_ps7_0_250M_0/DB_rst_ps7_0_250M_0.xdc] for cell 'DB_i/rst_ps7_0_250M/U0'
+Parsing XDC File [F:/FPGA_Project/FPGA_YK71/YK71/YK71.srcs/constrs_1/new/zturn_pins.xdc]
+Finished Parsing XDC File [F:/FPGA_Project/FPGA_YK71/YK71/YK71.srcs/constrs_1/new/zturn_pins.xdc]
+INFO: [Project 1-1714] 14 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1657.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+23 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1657.742 ; gain = 975.746
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1657.742 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 2af6ca0f3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 1685.660 ; gain = 27.918
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 2af6ca0f3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 2af6ca0f3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Phase 1 Initialization | Checksum: 2af6ca0f3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 2af6ca0f3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 2af6ca0f3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 2af6ca0f3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 10 inverter(s) to 36 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1be1f1b0d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Retarget | Checksum: 1be1f1b0d
+INFO: [Opt 31-389] Phase Retarget created 8 cells and removed 44 cells
+INFO: [Opt 31-1021] In phase Retarget, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 4 load pin(s).
+Phase 4 Constant propagation | Checksum: 1c1d981a5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Constant propagation | Checksum: 1c1d981a5
+INFO: [Opt 31-389] Phase Constant propagation created 7 cells and removed 17 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2084.203 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Phase 5 Sweep | Checksum: 29e0105a7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.741 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Sweep | Checksum: 29e0105a7
+INFO: [Opt 31-389] Phase Sweep created 2 cells and removed 128 cells
+INFO: [Opt 31-1021] In phase Sweep, 26 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 29e0105a7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.798 . Memory (MB): peak = 2084.203 ; gain = 0.000
+BUFG optimization | Checksum: 29e0105a7
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 29e0105a7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.807 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Shift Register Optimization | Checksum: 29e0105a7
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 225ffa4d7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.825 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Post Processing Netlist | Checksum: 225ffa4d7
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1ec47f98c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.935 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1ec47f98c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.951 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Phase 9 Finalization | Checksum: 1ec47f98c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.954 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               8  |              44  |                                             20  |
+|  Constant propagation         |               7  |              17  |                                             20  |
+|  Sweep                        |               2  |             128  |                                             26  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             20  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1ec47f98c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.958 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1ec47f98c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1ec47f98c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1ec47f98c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2084.203 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2084.203 ; gain = 426.461
+INFO: [Vivado 12-24828] Executing command : report_drc -file DB_wrapper_drc_opted.rpt -pb DB_wrapper_drc_opted.pb -rpx DB_wrapper_drc_opted.rpx
+Command: report_drc -file DB_wrapper_drc_opted.rpt -pb DB_wrapper_drc_opted.pb -rpx DB_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1/DB_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2084.203 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1/DB_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1df21aa78
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1923117ba
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.563 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 168f14580
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 168f14580
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 168f14580
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1956dec03
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 14f28c62a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 173a94891
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 1acaf4fe5
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 167f1a8c9
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 11 LUTNM shape to break, 91 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 8, two critical 3, total 11, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 37 nets or LUTs. Breaked 11 LUTs, combined 26 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           11  |             26  |                    37  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           11  |             26  |                    37  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1fe2e2ede
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 2af362fef
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 2af362fef
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 21c6d7c92
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 290565520
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2a8775e0f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1be64629f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 289fa8ed3
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 234db061d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 27bc7efb8
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1c163e099
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 157bd20c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2084.203 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 157bd20c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2084.203 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1a2904840
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.977 | TNS=-636.098 |
+Phase 1 Physical Synthesis Initialization | Checksum: 14e084ff8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2089.652 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: e1a07205
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 2089.652 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1a2904840
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2089.652 ; gain = 5.449
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-2.837. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1cf522def
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2089.652 ; gain = 5.449
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2089.652 ; gain = 5.449
+Phase 4.1 Post Commit Optimization | Checksum: 1cf522def
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2089.652 ; gain = 5.449
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1cf522def
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2089.652 ; gain = 5.449
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1cf522def
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2089.652 ; gain = 5.449
+Phase 4.3 Placer Reporting | Checksum: 1cf522def
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2089.652 ; gain = 5.449
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2089.652 ; gain = 0.000
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2089.652 ; gain = 5.449
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1ea1b7402
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2089.652 ; gain = 5.449
+Ending Placer Task | Checksum: 1250c82cf
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2089.652 ; gain = 5.449
+91 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 2089.652 ; gain = 5.449
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file DB_wrapper_utilization_placed.rpt -pb DB_wrapper_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file DB_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2089.652 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_io -file DB_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.058 . Memory (MB): peak = 2089.652 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2100.766 ; gain = 8.914
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 2108.227 ; gain = 7.461
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2108.227 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2108.227 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2108.227 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2108.227 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 2108.227 ; gain = 7.461
+INFO: [Common 17-1381] The checkpoint 'F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1/DB_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 2108.227 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 0.00s |  WALL: 0.14s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2108.227 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.837 | TNS=-635.624 |
+Phase 1 Physical Synthesis Initialization | Checksum: 463824d1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 2108.227 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.837 | TNS=-635.624 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 463824d1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 2108.227 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.837 | TNS=-635.624 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[1].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[1]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.837 | TNS=-635.669 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[2].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[2]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.837 | TNS=-635.884 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[3].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[3]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.837 | TNS=-635.931 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[4].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[4]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.755 | TNS=-636.018 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[5].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[5]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.755 | TNS=-636.003 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[6].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[6]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.755 | TNS=-636.000 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[7].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[7]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.755 | TNS=-635.997 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[8].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[8]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.752 | TNS=-635.994 |
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg_n_0_[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/clk_wiz_0/inst/clk_out1_DB_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt[14]_i_1_n_0. Critical path length was reduced through logic transformation on cell DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt[14]_i_1_comp.
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cp3_state_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.649 | TNS=-625.756 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[18].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[18]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[18]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.649 | TNS=-626.350 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[19].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[19]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[19]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.649 | TNS=-627.051 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[22].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[22]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[22]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.649 | TNS=-627.555 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[23].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[23]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[23]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.649 | TNS=-627.913 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[24].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[24]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[24]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.649 | TNS=-628.150 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[25].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[25]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.595 | TNS=-628.774 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[10].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[10]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.595 | TNS=-629.213 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[11].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[11]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.595 | TNS=-629.757 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[2].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[2]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.595 | TNS=-630.046 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[3].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[3]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.595 | TNS=-630.526 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[6].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[6]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.595 | TNS=-630.885 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[7].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[7]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.595 | TNS=-631.451 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[8].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[8]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.595 | TNS=-631.805 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[9].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[9]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.590 | TNS=-632.381 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[12].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[12]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.590 | TNS=-632.880 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[13].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[13]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.590 | TNS=-633.614 |
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/target_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/target_out1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 27 pins.
+INFO: [Physopt 32-735] Processed net DB_i/target_moving_0/U0/target_out1_carry__0_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.590 | TNS=-633.362 |
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting0_inferred__0/i__carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/i__carry_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/p_0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/i__carry_i_6__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net DB_i/target_moving_0/U0/target_pos_reg[5]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net DB_i/target_moving_0/U0/target_pos_reg[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.590 | TNS=-632.780 |
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/i__carry_i_8__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/target_pos_reg[5]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[14].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[14]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.590 | TNS=-633.281 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[15].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[15]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.590 | TNS=-634.040 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[16].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[16]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.590 | TNS=-634.352 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[17].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[17]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[17]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.590 | TNS=-635.035 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[20].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[20]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[20]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.590 | TNS=-635.347 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[21].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_reg[21]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[21]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.564 | TNS=-636.240 |
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/clk_wiz_0/inst/clk_out1_DB_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cp3_state_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cp3_state_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net DB_i/dongbo_0/U0/sync_out.  Re-placed instance DB_i/dongbo_0/U0/sync_out_reg
+INFO: [Physopt 32-735] Processed net DB_i/dongbo_0/U0/sync_out. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.520 | TNS=-627.010 |
+INFO: [Physopt 32-702] Processed net DB_i/dongbo_0/U0/sync_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/i__carry_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/p_0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/i__carry_i_8__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/target_pos_reg[5]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.520 | TNS=-627.010 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2114.363 ; gain = 0.000
+Phase 3 Critical Path Optimization | Checksum: 108e32b49
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2114.363 ; gain = 6.137
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.520 | TNS=-627.010 |
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/clk_wiz_0/inst/clk_out1_DB_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_0. Critical path length was reduced through logic transformation on cell DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg[31]_i_1_comp.
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cp3_state_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.514 | TNS=-596.399 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg[26].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg_reg[26]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg[26]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.514 | TNS=-596.779 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg[27].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg_reg[27]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg[27]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.508 | TNS=-597.502 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg[30].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg_reg[30]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg[30]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.508 | TNS=-597.958 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg[31].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg_reg[31]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg[31]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.472 | TNS=-598.913 |
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg[30]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg_1. Critical path length was reduced through logic transformation on cell DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg[31]_i_1_comp.
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cp3_state_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.450 | TNS=-574.510 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[24].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[24]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[24]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.450 | TNS=-574.227 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[25].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[25]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.450 | TNS=-573.944 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[26].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[26]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[26]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.450 | TNS=-573.661 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[27].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[27]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[27]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.449 | TNS=-573.378 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[10].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[10]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.449 | TNS=-573.237 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[11].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[11]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.449 | TNS=-573.096 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[8].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[8]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.449 | TNS=-572.955 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[9].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[9]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.374 | TNS=-572.814 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[31]_0[14].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[14]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[31]_0[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.374 | TNS=-572.479 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[31]_0[15].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[15]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[31]_0[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.374 | TNS=-572.144 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[31]_0[30].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[30]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[31]_0[30]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.374 | TNS=-571.809 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out_reg[31]_0[25].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out_reg[25]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out_reg[31]_0[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.374 | TNS=-571.474 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out_reg[31]_0[27].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out_reg[27]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out_reg[31]_0[27]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.374 | TNS=-571.461 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out_reg[31]_0[2].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out_reg[2]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out_reg[31]_0[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.373 | TNS=-571.420 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[28].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[28]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[28]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.373 | TNS=-571.356 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[29].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[29]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[29]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.373 | TNS=-571.292 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[30].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[30]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[30]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.373 | TNS=-571.228 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[31].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[31]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[31]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.367 | TNS=-571.164 |
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting0_inferred__0/i__carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/i__carry_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/p_0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/i__carry_i_6__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/i__carry_i_8__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/target_pos_reg[5]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[31]_0[29].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[29]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[31]_0[29]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.367 | TNS=-571.130 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[31]_0[2].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[2]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[31]_0[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.367 | TNS=-571.125 |
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_early_out_reg[31]_0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/clk_wiz_0/inst/clk_out1_DB_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cp3_state_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cp3_state_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out[31]_i_1_n_0.  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out[31]_i_1
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out[31]_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.357 | TNS=-560.501 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[0].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[0]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.357 | TNS=-560.468 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[1].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[1]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.357 | TNS=-560.421 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[2].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[2]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.357 | TNS=-560.374 |
+INFO: [Physopt 32-663] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[3].  Re-placed instance DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[3]
+INFO: [Physopt 32-735] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.310 | TNS=-560.327 |
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt[0]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net DB_i/dongbo_0/U0/sync_out.  Re-placed instance DB_i/dongbo_0/U0/sync_out_reg
+INFO: [Physopt 32-735] Processed net DB_i/dongbo_0/U0/sync_out. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.202 | TNS=-537.018 |
+INFO: [Physopt 32-702] Processed net DB_i/dongbo_0/U0/sync_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/i__carry_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/p_0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/i__carry_i_8__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/is_counting_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DB_i/target_moving_0/U0/target_pos_reg[5]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.202 | TNS=-537.018 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2114.387 ; gain = 0.000
+Phase 4 Critical Path Optimization | Checksum: 126feeaf5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2114.387 ; gain = 6.160
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2114.387 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-2.202 | TNS=-537.018 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.635  |         98.606  |            1  |              0  |                    66  |           0  |           2  |  00:00:02  |
+|  Total          |          0.635  |         98.606  |            1  |              0  |                    66  |           0  |           3  |  00:00:02  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2114.387 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1439d3b79
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2114.387 ; gain = 6.160
+INFO: [Common 17-83] Releasing license: Implementation
+360 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2132.172 ; gain = 8.988
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.101 . Memory (MB): peak = 2139.531 ; gain = 16.316
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2139.531 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2139.531 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2139.531 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2139.531 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.137 . Memory (MB): peak = 2139.531 ; gain = 16.316
+INFO: [Common 17-1381] The checkpoint 'F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1/DB_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 4d9c029 ConstDB: 0 ShapeSum: 475003ce RouteDB: 15f972f0
+Post Restoration Checksum: NetGraph: 6196174 | NumContArr: a4f11389 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2305c6a37
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2223.895 ; gain = 84.363
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2305c6a37
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2223.895 ; gain = 84.363
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2305c6a37
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2223.895 ; gain = 84.363
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1f0e9ff75
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2265.039 ; gain = 125.508
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.063 | TNS=-513.020| WHS=-0.518 | THS=-33.351|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 1710
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 1710
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 17be498cc
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2265.039 ; gain = 125.508
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 17be498cc
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2265.039 ; gain = 125.508
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 266c69fdf
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2265.039 ; gain = 125.508
+Phase 4 Initial Routing | Checksum: 266c69fdf
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2265.039 ; gain = 125.508
+INFO: [Route 35-580] Design has 175 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++=========================+=========================+===========================================================================================================+
+| Launch Setup Clock      | Launch Hold Clock       | Pin                                                                                                       |
++=========================+=========================+===========================================================================================================+
+| clk_out1_DB_clk_wiz_0_0 | clk_out1_DB_clk_wiz_0_0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cp3_state_reg/D   |
+| clk_out1_DB_clk_wiz_0_0 | clk_out1_DB_clk_wiz_0_0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[5]/R |
+| clk_out1_DB_clk_wiz_0_0 | clk_out1_DB_clk_wiz_0_0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[4]/R |
+| clk_out1_DB_clk_wiz_0_0 | clk_out1_DB_clk_wiz_0_0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[1]/R |
+| clk_out1_DB_clk_wiz_0_0 | clk_out1_DB_clk_wiz_0_0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt_reg[2]/R |
++-------------------------+-------------------------+-----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 164
+ Number of Nodes with overlaps = 46
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.411 | TNS=-717.995| WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 1eb526d04
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.413 | TNS=-715.771| WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 215de87a7
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+Phase 5 Rip-up And Reroute | Checksum: 215de87a7
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 125c95731
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.411 | TNS=-678.986| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 6.1 Delay CleanUp | Checksum: 2fe7b86a5
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 2fe7b86a5
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+Phase 6 Delay and Skew Optimization | Checksum: 2fe7b86a5
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.411 | TNS=-657.638| WHS=0.082  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 28a4bf148
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+Phase 7 Post Hold Fix | Checksum: 28a4bf148
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.2551 %
+  Global Horizontal Routing Utilization  = 0.322093 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 55.8559%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 54.955%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 48.5294%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 28a4bf148
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 28a4bf148
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 2ddb25218
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 2ddb25218
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.411 | TNS=-657.638| WHS=0.082  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 12 Post Router Timing | Checksum: 2ddb25218
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+Total Elapsed time in route_design: 21.323 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 1888c1c83
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 1888c1c83
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2300.883 ; gain = 161.352
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+376 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2300.883 ; gain = 161.352
+INFO: [Vivado 12-24828] Executing command : report_drc -file DB_wrapper_drc_routed.rpt -pb DB_wrapper_drc_routed.pb -rpx DB_wrapper_drc_routed.rpx
+Command: report_drc -file DB_wrapper_drc_routed.rpt -pb DB_wrapper_drc_routed.pb -rpx DB_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1/DB_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file DB_wrapper_methodology_drc_routed.rpt -pb DB_wrapper_methodology_drc_routed.pb -rpx DB_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file DB_wrapper_methodology_drc_routed.rpt -pb DB_wrapper_methodology_drc_routed.pb -rpx DB_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1/DB_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file DB_wrapper_timing_summary_routed.rpt -pb DB_wrapper_timing_summary_routed.pb -rpx DB_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file DB_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file DB_wrapper_route_status.rpt -pb DB_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file DB_wrapper_power_routed.rpt -pb DB_wrapper_power_summary_routed.pb -rpx DB_wrapper_power_routed.rpx
+Command: report_power -file DB_wrapper_power_routed.rpt -pb DB_wrapper_power_summary_routed.pb -rpx DB_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+393 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file DB_wrapper_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file DB_wrapper_bus_skew_routed.rpt -pb DB_wrapper_bus_skew_routed.pb -rpx DB_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2343.129 ; gain = 42.246
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2344.098 ; gain = 0.969
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.098 . Memory (MB): peak = 2352.281 ; gain = 8.184
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2352.281 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2352.281 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2352.281 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2352.281 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.146 . Memory (MB): peak = 2352.281 ; gain = 8.184
+INFO: [Common 17-1381] The checkpoint 'F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1/DB_wrapper_routed.dcp' has been generated.
+Command: write_bitstream -force DB_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./DB_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+408 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2859.109 ; gain = 506.828
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 26 01:02:20 2026...

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="dongbo_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="dongbo_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="9,515.405000 us"></ZoomStartTime>
+      <ZoomEndTime time="9,783.405001 us"></ZoomEndTime>
+      <Cursor1Time time="9,600.905000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="149"></NameColumnWidth>
+      <ValueColumnWidth column_width="143"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wave_markers>
+      <marker time="9602305000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/dongbo_tb/clk_100Mhz_tb" type="logic">
+      <obj_property name="ElementShortName">clk_100Mhz_tb</obj_property>
+      <obj_property name="ObjectShortName">clk_100Mhz_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dongbo_tb/reset_rtl_tb" type="logic">
+      <obj_property name="ElementShortName">reset_rtl_tb</obj_property>
+      <obj_property name="ObjectShortName">reset_rtl_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dongbo_tb/clk_out_tb" type="logic">
+      <obj_property name="ElementShortName">clk_out_tb</obj_property>
+      <obj_property name="ObjectShortName">clk_out_tb</obj_property>
+   </wvobject>
+</wave_config>

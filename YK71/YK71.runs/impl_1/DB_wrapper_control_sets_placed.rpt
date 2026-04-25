@@ -1,0 +1,135 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Sun Apr 26 01:01:35 2026
+| Host         : HOANGTUAN running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file DB_wrapper_control_sets_placed.rpt
+| Design       : DB_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    57 |
+|    Minimum number of control sets                        |    57 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   197 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    57 |
+| >= 0 to < 4        |    17 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |    10 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     5 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    18 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             193 |           67 |
+| No           | No                    | Yes                    |              27 |            9 |
+| No           | Yes                   | No                     |             102 |           49 |
+| Yes          | No                    | No                     |             243 |           68 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             334 |           80 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|                Clock Signal               |                                                                        Enable Signal                                                                        |                                                Set/Reset Signal                                                | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/s_sc_areset_pipe                                                  |                1 |              1 |         1.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/s_sc_areset_pipe                                                  |                1 |              1 |         1.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_nodes/s00_b_node/inst/s_sc_areset_pipe                                                   |                1 |              1 |         1.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_nodes/s00_r_node/inst/s_sc_areset_pipe                                                   |                1 |              1 |         1.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_nodes/s00_w_node/inst/s_sc_areset_pipe                                                   |                1 |              1 |         1.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/gen_axilite_conv.axilite_conv_inst/ar_addr_d[4]_i_1_n_0                                          | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/areset                                              |                1 |              2 |         2.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.inst_cntr/E[0] |                                                                                                                |                1 |              2 |         2.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst/reset_pol                              |                1 |              3 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst/reset_pol           |                1 |              3 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst/reset_pol                             |                1 |              3 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst/reset_pol                             |                1 |              3 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst/reset_pol                    |                1 |              3 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst/reset_pol                             |                1 |              3 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst/reset_pol                             |                1 |              3 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst/reset_pol                              |                1 |              3 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst/reset_pol                              |                1 |              3 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.inst_cntr/E[0] |                                                                                                                |                1 |              3 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/clk_map/psr_aclk/U0/EXT_LPF/lpf_int                                                          |                1 |              4 |         4.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/rst_ps7_0_250M/U0/EXT_LPF/lpf_int                                                                         |                2 |              4 |         2.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/gen_axilite_conv.axilite_conv_inst/aw_addr[4]_i_1_n_0                                            | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/areset                                              |                2 |              5 |         2.50 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/clk_map/psr_aclk/U0/SEQ/seq_cnt_en                                                                                                        | DB_i/axi_smc/inst/clk_map/psr_aclk/U0/SEQ/SEQ_COUNTER/clear                                                    |                1 |              6 |         6.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/rst_ps7_0_250M/U0/SEQ/seq_cnt_en                                                                                                                       | DB_i/rst_ps7_0_250M/U0/SEQ/SEQ_COUNTER/clear                                                                   |                1 |              6 |         6.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/slv_reg0[23]_i_1_n_0                                                               | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/SR[0]                  |                1 |              8 |         8.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/slv_reg0[15]_i_1_n_0                                                               | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/SR[0]                  |                2 |              8 |         4.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.decerr_slave_inst/gen_axi.gen_read.read_cnt[7]_i_1_n_0                                       | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/areset                                                       |                3 |              8 |         2.67 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/slv_reg0[7]_i_1_n_0                                                                | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/SR[0]                  |                1 |              8 |         8.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/slv_reg0[31]_i_1_n_0                                                               | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/SR[0]                  |                1 |              8 |         8.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/gen_axilite_conv.axilite_conv_inst/r_beats[7]_i_1_n_0                                            | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/areset                                              |                3 |              8 |         2.67 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/gen_axilite_conv.axilite_conv_inst/m_aruser                                                      | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/areset                                              |                3 |              9 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/gen_axilite_conv.axilite_conv_inst/ar_cnt[8]_i_1_n_0                                             | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/areset                                              |                4 |              9 |         2.25 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/gen_axilite_conv.axilite_conv_inst/b_cnt                                                         | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/gen_axilite_conv.axilite_conv_inst/b_cnt[8]_i_1_n_0 |                2 |              9 |         4.50 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/gen_axilite_conv.axilite_conv_inst/w_cnt[8]_i_1_n_0                                              | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/areset                                              |                5 |              9 |         1.80 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_w_singleorder.w_singleorder/gen_id_reg.s_rid_i0                        |                                                                                                                |                5 |             12 |         2.40 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.decerr_slave_inst/gen_axi.gen_read.s_axi_rid_i[11]_i_1_n_0                                   | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/areset                                                       |                4 |             12 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/gen_endpoint.decerr_slave_inst/gen_axi.gen_write.s_axi_bid_i[11]_i_1_n_0                                  | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/areset                                                       |                4 |             12 |         3.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/SR[0]                  |                5 |             12 |         2.40 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/gen_id_reg.s_rid_i0                        |                                                                                                                |                2 |             12 |         6.00 |
+|  DB_i/clk_wiz_0/inst/clk_out1             | DB_i/target_moving_0/U0/target_pos                                                                                                                          |                                                                                                                |                5 |             14 |         2.80 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt                                                            | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/tail_cnt[14]_i_1_n_0   |                4 |             15 |         3.75 |
+|  DB_i/clk_wiz_0/inst/clk_out1             | DB_i/target_moving_0/U0/delay_cnt[0]_i_1_n_0                                                                                                                |                                                                                                                |                5 |             18 |         3.60 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/aw_reg_stall/skid_buffer[1136]_i_1__0_n_0                                                                 |                                                                                                                |                3 |             19 |         6.33 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/aw_reg_stall/m_vector_i                                                                                   |                                                                                                                |                3 |             19 |         6.33 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/areset                                              |               13 |             22 |         1.69 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_reg_stall/skid_buffer[1136]_i_1_n_0                                                                    |                                                                                                                |                4 |             22 |         5.50 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_reg_stall/m_vector_i                                                                                   |                                                                                                                |                4 |             22 |         5.50 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/areset                                                       |               15 |             23 |         1.53 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_l_reg_0                                                      | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/SR[0]                  |                5 |             32 |         6.40 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/gen_axilite_conv.axilite_conv_inst/s_axi_rdata_i[31]_i_1_n_0                                     | DB_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/areset                                              |                8 |             32 |         4.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cp3_limit[31]_i_1_n_0                                               | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/SR[0]                  |                6 |             32 |         5.33 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/cycle_cnt[0]_i_1_n_0   |                8 |             32 |         4.00 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.inst_cntr/E[0]  |                                                                                                                |               12 |             32 |         2.67 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_e_reg_1                                                      | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/SR[0]                  |                6 |             32 |         5.33 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/target_moving_0/U0/target_out                                                                                                                          |                                                                                                                |               12 |             32 |         2.67 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.inst_cntr/E[0]  |                                                                                                                |               11 |             36 |         3.27 |
+|  DB_i/clk_wiz_0/inst/clk_out1             |                                                                                                                                                             |                                                                                                                |               20 |             53 |         2.65 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/energy_late_out[31]_i_1_n_0                                         | DB_i/YK71_Tracker_AXI_0/U0/YK71_Tracker_AXI_slave_lite_v1_0_S00_AXI_inst/YK71_Core_Inst/SR[0]                  |               13 |             64 |         4.92 |
+|  DB_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                             |                                                                                                                |               49 |            142 |         2.90 |
++-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

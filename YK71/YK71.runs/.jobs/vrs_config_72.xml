@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="DB_dongbo_0_0_synth_1" LaunchDir="F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/DB_dongbo_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DB_processing_system7_0_0_synth_1" LaunchDir="F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/DB_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DB_target_moving_0_0_synth_1" LaunchDir="F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/DB_target_moving_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DB_YK71_Tracker_AXI_0_0_synth_1" LaunchDir="F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/DB_YK71_Tracker_AXI_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="DB_dongbo_0_0_synth_1"/>
+		<Parent Id="DB_processing_system7_0_0_synth_1"/>
+		<Parent Id="DB_target_moving_0_0_synth_1"/>
+		<Parent Id="DB_YK71_Tracker_AXI_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="DB_dongbo_0_0_synth_1"/>
+		<Parent Id="DB_processing_system7_0_0_synth_1"/>
+		<Parent Id="DB_target_moving_0_0_synth_1"/>
+		<Parent Id="DB_YK71_Tracker_AXI_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

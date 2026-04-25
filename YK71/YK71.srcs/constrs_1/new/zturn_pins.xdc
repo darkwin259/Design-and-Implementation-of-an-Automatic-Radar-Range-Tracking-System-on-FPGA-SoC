@@ -1,0 +1,16 @@
+set_property PACKAGE_PIN J20 [get_ports target_out_0]
+set_property IOSTANDARD LVCMOS33 [get_ports target_out_0]
+set_property PACKAGE_PIN H20 [get_ports sync_out_0]
+set_property IOSTANDARD LVCMOS33 [get_ports sync_out_0]
+set_property PACKAGE_PIN G19 [get_ports CLK_OUT]
+set_property IOSTANDARD LVCMOS33 [get_ports CLK_OUT]
+
+
+set_property PACKAGE_PIN N15 [get_ports cp3_out_0]
+set_property IOSTANDARD LVCMOS33 [get_ports cp3_out_0]
+set_property PACKAGE_PIN N16 [get_ports r_out_0]
+set_property IOSTANDARD LVCMOS33 [get_ports r_out_0]
+set_property PACKAGE_PIN L14 [get_ports csbs1_out_0]
+set_property IOSTANDARD LVCMOS33 [get_ports csbs1_out_0]
+set_property PACKAGE_PIN L15 [get_ports csbs2_out_0]
+set_property IOSTANDARD LVCMOS33 [get_ports csbs2_out_0]

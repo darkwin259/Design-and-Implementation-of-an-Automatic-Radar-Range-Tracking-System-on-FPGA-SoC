@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+Note: ====== Bat dau mo phong target_moving ======
+Time: 0 ps  Iteration: 0  Process: /target_moving_tb/stim_proc  File: F:/FPGA_Project/FPGA_YK71/YK71/YK71.srcs/sim_1/new/Target_Moving_tb.vhd
+Note: ====== Mo phong hoan tat! ======
+Time: 7000100 ns  Iteration: 0  Process: /target_moving_tb/stim_proc  File: F:/FPGA_Project/FPGA_YK71/YK71/YK71.srcs/sim_1/new/Target_Moving_tb.vhd
+$stop called at time : 7000100 ns : File "F:/FPGA_Project/FPGA_YK71/YK71/YK71.srcs/sim_1/new/Target_Moving_tb.vhd" Line 75
+Note: ====== Bat dau mo phong target_moving ======
+Time: 7000100 ns  Iteration: 0  Process: /target_moving_tb/stim_proc  File: F:/FPGA_Project/FPGA_YK71/YK71/YK71.srcs/sim_1/new/Target_Moving_tb.vhd
+Note: ====== Mo phong hoan tat! ======
+Time: 14000200 ns  Iteration: 0  Process: /target_moving_tb/stim_proc  File: F:/FPGA_Project/FPGA_YK71/YK71/YK71.srcs/sim_1/new/Target_Moving_tb.vhd
+$stop called at time : 14000200 ns : File "F:/FPGA_Project/FPGA_YK71/YK71/YK71.srcs/sim_1/new/Target_Moving_tb.vhd" Line 75

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Sun Apr 26 01:00:08 2026
+# Process ID         : 23412
+# Current directory  : F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1
+# Command line       : vivado.exe -log DB_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DB_wrapper.tcl -notrace
+# Log file           : F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1/DB_wrapper.vdi
+# Journal file       : F:/FPGA_Project/FPGA_YK71/YK71/YK71.runs/impl_1\vivado.jou
+# Running On         : HOANGTUAN
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16782 MB
+# Swap memory        : 13836 MB
+# Total Virtual      : 30618 MB
+# Available Virtual  : 5820 MB
+#-----------------------------------------------------------
+source DB_wrapper.tcl -notrace

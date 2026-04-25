@@ -1,0 +1,7 @@
+Running: xsim.dir/Moving_Target_Sim_250M_tb_behav/xsimk.exe -simmode gui -wdb Moving_Target_Sim_250M_tb_behav.wdb -simrunnum 0 -socket 50866
+Design successfully loaded
+Design Loading Memory Usage: 30024 KB (Peak: 30024 KB)
+Design Loading CPU Usage: 514 ms
+Simulation completed
+Simulation Memory Usage: 38788 KB (Peak: 38788 KB)
+Simulation CPU Usage: 812 ms
